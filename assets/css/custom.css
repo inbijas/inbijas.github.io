@@ -1,0 +1,7 @@
+.pull-left.scrollTo > img {
+    font: 33px bold;
+}
+
+.owl-carousel.column .top-image {
+  height: 250px !important;
+}

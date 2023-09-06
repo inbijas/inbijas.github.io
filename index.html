@@ -1,0 +1,340 @@
+<!doctype html>
+<html class="nicescroll" lang="ar-MA">
+<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<title>DEUSONE - Multipurpose OnePage Template</title>
+		<meta name="Author" content="Dorin Grigoras [https://wrapbootstrap.com/user/stepofweb]" />
+
+<!--[if lt IE 9]>
+		<script type="text/javascript" src="/assets/plugins/lt-ie9/html5.js"></script>
+		<script type="text/javascript" src="/assets/plugins/lt-ie9/respond.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/lt-ie9/excanvas.compiled.js"></script>
+<![endif]-->
+
+		<!-- GOOGLE FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS FRAMEWORK -->
+		<link href="/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/css/animate.css" rel="stylesheet" type="text/css" />
+
+		<!-- PLUGINS -->
+		<link href="/assets/plugins/jquery-owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/plugins/jquery-owl-carousel/owl.theme.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/plugins/prettyPhoto/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/plugins/jquery-bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+
+		<!-- CSS TEMPLATE -->
+		<link href="/assets/css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/css/shop.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/css/color/orange.css" rel="stylesheet" type="text/css" /><!-- demo default style -->
+		<link href="/assets/css/custom.css" rel="stylesheet" type="text/css" />
+
+		<!-- colors : demo only -->
+		<link href="/assets/css/color/blue.css" rel="alternate stylesheet" type="text/css" title="blue" />
+		<link href="/assets/css/color/orange.css" rel="alternate stylesheet" type="text/css" title="orange" />
+		<link href="/assets/css/color/green.css" rel="alternate stylesheet" type="text/css" title="green" />
+		<link href="/assets/css/color/red.css" rel="alternate stylesheet" type="text/css" title="red" />
+		<link href="/assets/css/color/yellow.css" rel="alternate stylesheet" type="text/css" title="yellow" />
+		<link href="/assets/css/color/gray.css" rel="alternate stylesheet" type="text/css" title="gray" />
+		<link href="/assets/css/color/pink.css" rel="alternate stylesheet" type="text/css" title="pink" />
+		<link href="/assets/css/color/mauve.css" rel="alternate stylesheet" type="text/css" title="mauve" />
+
+		<!-- ICONS -->
+		<link rel="shortcut icon" href="/assets/images/icon.png" type="image/x-icon" />
+		<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+
+		<!-- STYLESWITCHER -->
+		<link href="/assets/plugins/styleswitcher/styleswitcher.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<div id="switcher">
+			<div class="content-switcher" >
+				<h4>STYLE OPTIONS</h4>
+				<p>Color Skin:</p>
+				<ul style="width:150px;">
+					<li><a href="#" onclick="setActiveStyleSheet('orange'); return false;" class="color" style="background-color:#F07057"></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('blue'); return false;" class="color" style="background-color:#50657B"></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('green'); return false;" class="color" style="background-color:#6aa018"></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('red'); return false;" class="color" style="background-color:#e93735"></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('pink'); return false;" class="color" style="background-color:#f73f69"></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('mauve'); return false;" class="color" style="background-color:#c91ac9"></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('yellow'); return false;" class="color" style="background-color:#f1c40f"></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('gray'); return false;" class="color" style="background-color:#333333"></a></li>
+				</ul>
+				<p>Home Page Template:</p>
+				<div class="styled-select">
+					<select onchange="window.document.location.href=this.options[this.selectedIndex].value;">
+						<optgroup label="Standard">
+							<option value="index-1.html">01. Fullscreen Slider</option>
+							<option value="index-2.html">02. Image Only</option>
+						</optgroup>
+						<optgroup label="Video Frame &amp; Parallax">
+							<option value="index-3.html">03. Parallax &amp; Video - full</option>
+							<option value="index-4.html">04. Parallax &amp; Video - Normal</option>
+						</optgroup>
+						<optgroup label="Text &amp; Parallax">
+							<option value="index-5.html">05. Text with Parallax Bg</option>
+							<option value="index-6.html">06. Text Only - Normal</option>
+							<option value="index-7.html">07. Text Only - Full</option>
+						</optgroup>
+						<optgroup label="Video Background">
+							<option selected="selected">08. Video Background - Full</option>
+							<option value="index-9.html">09. Video Background - Normal</option>
+						</optgroup>
+					</select>
+				</div>
+				<div id="hideSwitcher">&times;</div>
+			</div>
+		</div>
+		<div id="showSwitcher"><i class="fa fa-tint"></i></div>
+		<section id="home" class="homeTop color" style="background:url(assets/images/preview/video/ink.jpg) no-repeat center;">
+			<span class="raster"></span>
+<!--
+				video background
+				see included javascript on the bottom
+-->
+			<div id="videoBg"></div>
+			<script type="text/javascript">/* <![CDATA[ */
+				var videoBg = {
+					mp4:'/media/clips/a-bee-is-born.mp4',
+					ogv:'https://dl-web.dropbox.com/get/Art/a-bee-is-born.ogv?w=AAD1-XevaV4Rq5mY8iiSm2yB04DP9taOU__71_G7yhoUIA&dl=1&_subject_uid=5761859',
+					poster:'/assets/images/preview/video/ink.jpg',
+					scale:true,
+					zIndex:0,
+					position:"absolute",
+					opacity:1,
+					fullscreen:true
+				};
+				/* ]]> */
+			</script>
+			<div class="image-caption">
+				<div class="inner">
+					<div class="simple">
+						<h1>انبثاق</h1>
+						<h2>سافر. إكتشف. شارك.</h2>
+						<p>رؤية تشاركية لتشجيع خلق القيمة  المضافة من خلال السياحة.</p>
+						<a class="btn btn-success btn-lg" href="#header">
+							تعرف أكثر						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<header id="header">
+			<div class="container">
+				<a href="#home" class="pull-left scrollTo"><img src="/assets/images/logo.png" height="60" alt="انبثاق" /></a>
+				<button id="mobileMenu" class="fa fa-bars" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"></button>
+				<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+					<ul id="onepageNav" class="nav navbar-nav navbar-right"><!-- id="onepageNav" for homepage only -->
+						<li class="active"><a class="external" href="/#header">HOME</a></li>
+						<li><a class="external" href="/travel">TRAVEL</a></li>
+						<li class="dropdown">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">DISCOVER <i class="fa fa-angle-down"></i></a>
+							<ul class="dropdown-menu">
+								<li><a href="/discover/taza" class="external">Taza</a></li>
+								<li><a href="/discover/bab-boudir" class="external">Bab Boudir</a></li>
+							</ul>
+						</li>
+						<li><a class="external" href="/share">SHARE</a></li>
+						<li><a class="external" href="/contact">CONTACT</a></li>
+						<li><a class="external" href="/shop/">GOODIES</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+<section id="services">
+  <header>
+    <h2 data-animation="bounceIn">أهدافنا</h2>
+  </header>
+  <article class="container">
+    <p>
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.<br />
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </p>
+  </article>
+  <article class="container">
+    <div class="serviceBoxContainer">
+      <div class="serviceBox" data-animation="fadeInUp">
+        <i data-animation="rotateIn" class="fa fa-leaf"></i>
+        <h4>كفالة الاستدامة البيئية</h4>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+      </div>
+      <div class="serviceBox" data-animation="fadeInUp">
+        <i data-animation="rotateIn" class="fa fa-medkit"></i>
+        <h4>الصحة</h4>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+      </div>
+      <div class="serviceBox" data-animation="fadeInUp">
+        <i data-animation="rotateIn" class="fa fa-users"></i>
+        <h4>خلق فرص الشغل</h4>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+      </div>
+      <div class="serviceBox" data-animation="fadeInUp">
+        <i data-animation="rotateIn" class="fa fa-female"></i>
+        <h4>إشراك المرأة القروية إقتصاديا</h4>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+      </div>
+    </div>
+  </article>
+  <article class="container">
+    <div class="serviceColumnContainer">
+      <div class="row">
+        <div class="col-md-6 text-left">
+          <div class="serviceColumn animate_from_left">
+            <i class="ico-stack fa fa-leaf"></i>
+            <h3 class="page-header">Agriculture</h3>
+            <p>We design beautiful responsive websites and iOS apps focusing on design, content and a great user experience.</p>
+          </div>
+          <div class="serviceColumn">
+            <i class="ico-stack fa fa-camera"></i>
+            <h3 class="page-header">PHOTOGRAPHY</h3>
+            <p>We design beautiful responsive websites and iOS apps focusing on design, content and a great user experience.</p>
+          </div>
+        </div>
+        <div class="col-md-6 text-left animate_from_right">
+          <div class="serviceColumn animate_from_left">
+            <i class="ico-stack fa fa-briefcase"></i>
+            <h3 class="page-header">Entrepreuneurship</h3>
+            <p>We design beautiful responsive websites and iOS apps focusing on design, content and a great user experience.</p>
+          </div>
+          <div class="serviceColumn animate_from_right">
+            <i class="ico-stack fa fa-video-camera"></i>
+            <h3 class="page-header">VIDEO</h3>
+            <p>We design beautiful responsive websites and iOS apps focusing on design, content and a great user experience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+<section id="team">
+  <header>
+    <h2 data-animation="bounceIn">MEET OUR TEAM</h2>
+  </header>
+  <article class="container text-left">
+    <p class="dropcap">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+  </article>
+  <article class="container text-left">
+      <div class="owl-carousel column" data-navigation="false" data-singleitem="false" data-autoplay="false" data-animation="fadeIn">
+        <div class="item dragCursor" data-animation="fadeInUp">
+          <span class="top-image"><img src="/media/mugshots/alex.jpg" alt="..." height="250"></span>
+          <h4>
+            <strong>Amine MAAJEM</strong>
+            / Founder
+          </h4>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+          <a target="_blank" href="#" class="rounded-icon social fa fa-facebook"></a><!-- facebook -->
+          <a target="_blank" href="#" class="rounded-icon social fa fa-twitter"></a><!-- twitter -->
+          <a target="_blank" href="#" class="rounded-icon social fa fa-google-plus"></a><!-- google plus -->
+          <a target="_blank" href="#" class="rounded-icon social fa fa-pinterest"></a><!-- pinterest -->
+          <a target="_blank" href="#" class="rounded-icon social fa fa-skype"></a><!-- skype -->
+        </div>
+        <div class="item dragCursor" data-animation="fadeInUp">
+          <span class="top-image"><img src="/media/mugshots/shivha.jpg" alt="..." height="250"></span>
+          <h4>
+            <strong>TAYAA Med Amine</strong>
+            / Consultant
+          </h4>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+          <a target="_blank" href="https://facebook.com/tayamino" class="rounded-icon social fa fa-facebook"></a><!-- facebook -->
+          <a target="_blank" href="https://twitter.com/tayamino" class="rounded-icon social fa fa-twitter"></a><!-- twitter -->
+          <a target="_blank" href="https://github.com/tayamino" class="rounded-icon social fa fa-github"></a><!-- google plus -->
+          <a target="_blank" href="https://bitbucket.org/tayamino" class="rounded-icon social fa fa-github"></a><!-- google plus -->
+        </div>
+      </div>
+    </article>
+</section>
+<section id="skills">
+  <header>
+    <h2 data-animation="bounceIn">OUR SKILLS</h2>
+  </header>
+  <article class="container">
+    <div class="row">
+      <div class="col-md-6 text-left">
+        <h3>PRESENT</h3>
+        <p>A skill is the learned ability to carry out a task with pre-determined results often within a given amount of time, energy, or both[citation needed]. In other words the abilities that one possesses. Skills can often be divided into domain-general and domain-specific skills. For example, in the domain of work, some general skills would include time management, teamwork and leadership, self motivation and others, whereas domain-specific skills would be useful.</p>
+      </div>
+      <div class="col-md-6 text-left">
+        <h3>FUTURE</h3>
+        <p>A skill is the learned ability to carry out a task with pre-determined results often within a given amount of time, energy, or both[citation needed]. In other words the abilities that one possesses. Skills can often be divided into domain-general and domain-specific skills. For example, in the domain of work, some general skills would include time management, teamwork and leadership, self motivation and others, whereas domain-specific skills would be useful.</p>
+      </div>
+    </div>
+  </article>
+  <article class="container">
+    <div class="row">
+      <div class="animate_from_left easyPieChartItem" data-animation="fadeInUp">
+        <div class="pieChart" data-bar-color="#F07057" data-bar-width="150" data-percent="100">100%</div>
+        <h4>Web Design</h4>
+      </div>
+      <div class="easyPieChartItem" data-animation="fadeInUp">
+        <div class="pieChart" data-bar-color="#F07057" data-bar-width="150" data-percent="98">98%</div>
+        <h4>Web Developing</h4>
+      </div>
+      <div class="easyPieChartItem" data-animation="fadeInUp">
+        <div class="pieChart" data-bar-color="#F07057" data-bar-width="150" data-percent="48">48%</div>
+        <h4>Video Marketing</h4>
+      </div>
+      <div  class="animate_from_right easyPieChartItem" data-animation="fadeInUp">
+        <div class="pieChart" data-bar-color="#F07057" data-bar-width="150" data-percent="99">99%</div>
+        <h4>Support</h4>
+      </div>
+    </div>
+  </article>
+</section>
+		<footer id="footer">
+			<div id="gmap"></div><a href="#" class="gmapClose"></a>
+			<div id="footerContent">
+				<div class="container">
+					<h2 data-animation="bounceIn">KEEP IN TOUCH</h2>
+					<div class="social">
+						<a target="_blank" href="#" class="socialbtn facebook"><i class="fa fa-facebook"></i>Facebook</a>
+						<a target="_blank" href="#" class="socialbtn twitter"><i class="fa fa-twitter"></i>Twitter</a>
+						<a target="_blank" href="#" class="socialbtn google"><i class="fa fa-google-plus"></i>Google Plus</a>
+						<a target="_blank" href="#" class="socialbtn twitter"><i class="fa fa-linkedin"></i>LinkedIn</a>
+						<br />
+						<a target="_blank" href="tel:" class="socialbtn call"><i class="fa fa-phone"></i>Chat with us</a>
+						<a target="_blank" href="skype:?chat" class="socialbtn skype"><i class="fa fa-skype"></i>Chat with us</a>
+						<a href="" class="gmapShow socialbtn gmap"><i class="fa fa-map-marker"></i>Visit us</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- CORE JS FRAMEWORK-->
+		<script type="text/javascript" src="/assets/plugins/pace/pace.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery-easing/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/isotope/jquery.isotope.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/masonry.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/smoothscroll.js"></script>
+		<script async type="text/javascript" src="/assets/plugins/modernizr.min.js"></script>
+		<!-- PLUGINS -->
+		<script type="text/javascript" src="/assets/plugins/jquery-fitvids/jquery.fitvids.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery-appear/jquery.appear.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery-countTo/jquery.countTo.js"></script>
+		<script type="text/javascript" src="/assets/plugins/nicescroll/jquery.nicescroll.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery-scrollto/jquery.scrollTo.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery-onepage-nav/jquery.nav.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery-owl-carousel/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery-easy-pie-chart/jquery.easypiechart.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/prettyPhoto/js/jquery.prettyPhoto.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery-stellar/jquery.stellar.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery-bxslider/jquery.bxslider.pack.js"></script>
+		<script type="text/javascript" src="/assets/plugins/iscroll/iscroll.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery-zoom/jquery.zoom.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery-videoBG/jquery.videoBG.js"></script> <!-- video background -->
+
+		<script type="text/javascript" src="/assets/js/demo.js"></script>
+		<script type="text/javascript" src="/assets/js/scripts.js"></script>
+
+		<script async type="text/javascript" src="/assets/js/shop.js"></script>
+		<script async type="text/javascript" src="/assets/js/contact.js"></script>
+		<script async type="text/javascript" src="/assets/plugins/styleswitcher/styleswitcher.js"></script>
+</html>
